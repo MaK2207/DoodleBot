@@ -1,0 +1,3 @@
+# Code to identify the path to be travelled by DoodleBot from an input image
+In this code done in Google Colab, I have used the cv2 library in python to do the necessary image processing to arive at the final path.
+First, I have used the wget method to use the image in Colab. Then using functions included in cv2, I have changed the image to grayscale, applied a mask on it, thresholded it, found th contours and skeletonised the thresholded image to arive at the paths. Then, I have overlaid the image on the initial image and downloaded the path coordinates as a csv file.  
